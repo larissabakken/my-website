@@ -8,7 +8,7 @@ import { BsPersonLinesFill } from 'react-icons/bs';
 import Logo from '../public/assets/js.png';
 
 export const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
