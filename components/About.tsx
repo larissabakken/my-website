@@ -8,26 +8,25 @@ export const About = () => {
     <div className="w-full md:h-screen p-2 flex items-center py-6">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p>About</p>
-          <h2>Who I Am</h2>
-          <p>
+          <p className="uppercase font-bold text-xl tracking-widest text-blue-500">
+            About
+          </p>
+          <h2 className="py-3">Who I Am</h2>
+          <p className="py-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
             quo fuga dolores consequatur, necessitatibus ab id voluptate porro
             ducimus deleniti aperiam magnam itaque amet sequi sint, minus
             quibusdam officia molestiae!
           </p>
-          <p>
+          <p className="py-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
             quo fuga dolores consequatur, necessitatibus ab id voluptate porro
             ducimus deleniti aperiam magnam itaque amet sequi sint, minus
             quibusdam officia molestiae!
           </p>
         </div>
-        <div>
-          <img
-            src={picture}
-            alt="Larissa"
-          />
+        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 p-1 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-500">
+          <img className="rounded-xl" src={picture} alt="Larissa" />
         </div>
       </div>
     </div>
