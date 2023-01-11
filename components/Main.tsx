@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { BsPersonLinesFill } from 'react-icons/bs';
+
 export const Main = () => {
   return (
     <div className="w-full h-screen text-center">
@@ -20,6 +24,20 @@ export const Main = () => {
             magnam, id nobis. Veniam, id culpa est excepturi at vero
             repudiandae.
           </p>
+          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+              <FaGithub />
+            </div>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+              <FaLinkedin />
+            </div>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+              <AiOutlineMail />
+            </div>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+              <BsPersonLinesFill />
+            </div>
+          </div>
         </div>
       </div>
     </div>
