@@ -7,7 +7,7 @@ export const Skills = () => {
   return (
     <div className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-blue-500">
+        <p className="font-bold text-xl tracking-widest uppercase text-blue-500">
           Skills
         </p>
         <h2 className="py-4">What I Can Do</h2>
@@ -55,7 +55,7 @@ export const Skills = () => {
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
