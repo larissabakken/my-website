@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BsPersonLinesFill } from 'react-icons/bs';
-import Logo from '../public/assets/js.png';
+import { RiCodeView } from 'react-icons/ri';
 
 export const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -17,8 +16,8 @@ export const Navbar = () => {
   return (
     <div className="fixed w-full h-28 shadow-xl z-[108]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="shadow-2xl shadown-gray-400 p-3 cursor-pointer">
-          <Image src={Logo} height="70" alt="Logo" />
+        <div className="p-3 cursor-pointer rounded-full shadow-lg shadow-blue-500">
+          <RiCodeView size={25} />
         </div>
         <div>
           <ul className="hidden md:flex">
@@ -44,7 +43,9 @@ export const Navbar = () => {
         </div>
       </div>
       <div
-        className={!nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}
+        className={
+          !nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+        }
       >
         <div
           className={
@@ -55,8 +56,8 @@ export const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <div className="shadow-2xl shadown-gray-400 p-3 cursor-pointer">
-                <Image src={Logo} height="50" alt="Logo" />
+              <div className="shadow-2xl shadown-blue-400 p-3 cursor-pointer">
+                <RiCodeView size={15} />
               </div>
               <div
                 onClick={handleNav}

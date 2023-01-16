@@ -25,7 +25,7 @@ export const About = () => {
             quibusdam officia molestiae!
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 p-1 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-500">
+        <div className="w-full h-auto m-auto shadow-lg shadow-gray-500 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-500">
           <img className="rounded-xl" src={picture} alt="Larissa" />
         </div>
       </div>
