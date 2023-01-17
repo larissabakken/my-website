@@ -68,7 +68,7 @@ export const Navbar = () => {
             </div>
             <div className="border-b border-gray-300 my-4">
               <p className="w-[85%} md:w-[90%] py-4">
-                Lets build something legendary here!
+              Coding on Javascript and dreaming on Javascript. 
               </p>
             </div>
             <div className="py-4 flex flex-col">
