@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { ModalCV } from './ModalCV';
 
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -8,6 +9,11 @@ import { RiCodeView } from 'react-icons/ri';
 
 export const Navbar = () => {
   const [nav, setNav] = useState(true);
+  const [show, setShow] = useState(false);
+
+  const gitHub = 'https://github.com/ramos-larissa';
+  const linkedIn = 'https://www.linkedin.com/in/lsramos95/';
+  const email = 'mailto:lsramos.cdc@gmail.com';
 
   const handleNav = () => {
     setNav(!nav);
@@ -50,25 +56,26 @@ export const Navbar = () => {
         <div
           className={
             !nav
-              ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w[60%] md:w[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w[60%] md:w[45%] h-screen bg-[#2b2b30] p-10 ease-in duration-500'
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <div className="shadow-2xl shadown-blue-400 p-3 cursor-pointer">
-                <RiCodeView size={15} />
+              <div className="rounded-full shadow-lg shadow-blue-500 p-3">
+                <RiCodeView size={20} />
               </div>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadown-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-blue-500 p-3"
               >
-                <AiOutlineClose size={18} />
+                <AiOutlineClose size={20} />
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%} md:w-[90%] py-4">
-              Coding on Javascript and dreaming on Javascript. 
+              <p className="w-[85%} md:w-[90%] py-6">
+                Hi, I'm Larissa Ramos
+                <br />A FullStack Developer.
               </p>
             </div>
             <div className="py-4 flex flex-col">
@@ -94,18 +101,29 @@ export const Navbar = () => {
                   Let's Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <FaLinkedin />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <Link href={gitHub} target="_blank">
+                    <div className="rounded-full shadow-lg shadow-blue-500 p-4 ">
+                      <FaGithub />
+                    </div>
+                  </Link>
+                  <Link href={linkedIn} target="_blank">
+                    <div className="rounded-full shadow-lg shadow-blue-500 p-4 ">
+                      <FaLinkedin />
+                    </div>
+                  </Link>
+                  <Link href={email} target="_blank">
+                    <div className="rounded-full shadow-lg shadow-blue-500 p-4 ">
+                      <AiOutlineMail />
+                    </div>
+                  </Link>
+
+                  <div
+                    className="rounded-full shadow-lg shadow-blue-500 p-4 "
+                    onClick={() => setShow(true)}
+                  >
                     <BsPersonLinesFill />
                   </div>
+                  <ModalCV onClose={() => setShow(false)} show={show} />
                 </div>
               </div>
             </div>
