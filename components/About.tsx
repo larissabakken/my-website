@@ -11,18 +11,51 @@ export const About = () => {
           <p className="uppercase font-bold text-xl tracking-widest text-blue-500">
             About
           </p>
-          <h2 className="py-3">Who I Am</h2>
+          <h3 className="py-3">Who I Am</h3>
           <p className="py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            quo fuga dolores consequatur, necessitatibus ab id voluptate porro
-            ducimus deleniti aperiam magnam itaque amet sequi sint, minus
-            quibusdam officia molestiae!
+            Coding on Javascript and dreaming on Javascript. I have been working
+            for various teams with different projects, gaining experience with
+            different Technologies. Technology is one of my passions, share
+            knowledge and learn new things it’s my motivation! I’m currently
+            learning/focusing in my Backend skills (nodejs and kotlin).
+          </p>
+          <p className="py-2">I am always looking to improve my knowledge!</p>
+          <p className="py-2 uppercase font-bold text-xl tracking-widest text-blue-500">
+            EDUCATION || CERTIFICATIONS
           </p>
           <p className="py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            quo fuga dolores consequatur, necessitatibus ab id voluptate porro
-            ducimus deleniti aperiam magnam itaque amet sequi sint, minus
-            quibusdam officia molestiae!
+            <span className="font-bold">IBM Fullstack Developer</span> -
+            Professional certificate guided by experts at IBM. ||{' '}
+            <span className="font-thin">2022 - 2023</span>
+          </p>
+          <p className="py-2">
+            <span className="font-bold">
+              Uniceub - Software analysis and development
+            </span>{' '}
+            || <span className="font-thin">2020 - 2023</span>
+          </p>
+          <p className="py-2 uppercase font-bold text-xl tracking-widest text-blue-500">
+            Hackathons
+          </p>
+          <p className="py-2">
+            <span className="font-bold">CPMG BNDES</span> - 3st place ||{' '}
+            <span className="font-thin">2018</span>
+          </p>
+          <p className="py-2">
+            <span className="font-bold">CPBR Jandaia</span> - 1st place ||{' '}
+            <span className="font-thin"> 2019</span>
+          </p>
+          <p className="py-2">
+            <span className="font-bold">CPBS Tempos de mudanças</span> - 2st place ||{' '} 
+            <span className="font-thin"> 2019</span>
+          </p>
+          <p className="py-2">
+            <span className="font-bold">CPBS Aprender Bem</span> - 2st place ||{' '}
+            <span className="font-thin"> 2019</span>
+          </p>
+          <p className="py-2">
+            <span className="font-bold">CPBS Zé Gotinha</span> - 1st place ||{' '}
+            <span className="font-thin"> 2019</span>
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-lg shadow-gray-500 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-500">
