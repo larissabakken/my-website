@@ -18,7 +18,7 @@ export const ModalCV = (props: any) => {
                     className="text-blue-800 shadow-lg shadow-gray-700 rounded-2xl background-transparent font-bold uppercase px-8 m-4 py-4 text-sm outline-none cursor-pointer hover:scale-105 ease-in duration-200"
                     target="_blank"
                     download
-                    href={'/resume-LarissaRamos-eng.pdf'}
+                    href={'/resume_LarissaRamos_en.pdf'}
                     onClick={props.onClose}
                   >
                     Download
