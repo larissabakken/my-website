@@ -27,7 +27,7 @@ import Sass from '../public/assets/skills/frontend/sass.png';
 
 export const Skills = () => {
   return (
-    <div className="w-full  p-2">
+    <div id="skills" className="w-full  p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="font-bold text-xl tracking-widest uppercase text-blue-500">
           Skills

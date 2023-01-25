@@ -4,7 +4,7 @@ const picture ='/assets/profile.jpeg';
 
 export const About = () => {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-6">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-6">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase font-bold text-xl tracking-widest text-blue-500">
