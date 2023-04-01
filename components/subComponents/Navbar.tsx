@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ModalCV } from './ModalCV';
 
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { BsPersonLinesFill } from 'react-icons/bs';
 import { RiCodeView } from 'react-icons/ri';
 
 export const Navbar = () => {
@@ -24,13 +22,13 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-28 shadow-xl z-[108]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="p-3 cursor-pointer rounded-full shadow-lg shadow-blue-500">
-          <RiCodeView size={25} />
+    <div className="fixed w-full h-[5rem] shadow-xl z-[108]">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[var(--bg-color-light)]">
+        <div className="hidden md:flex p-2 cursor-pointer rounded-full shadow-lg shadow-[var(--primary-color)]">
+          <RiCodeView size={20} />
         </div>
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex mr-9">
             <Link href="/">
               <li className="ml-10 text-sm hover:border-b">Home</li>
             </Link>
@@ -40,12 +38,6 @@ export const Navbar = () => {
             <Link href="/#skills">
               <li className="ml-10 text-sm hover:border-b">Skills</li>
             </Link>
-            {/* <Link href="/projects">
-              <li className="ml-10 text-sm hover:border-b">Projects</li>
-            </Link>
-            <Link href="/contact">
-              <li className="ml-10 text-sm hover:border-b">Contact</li>
-            </Link> */}
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
@@ -66,12 +58,12 @@ export const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <div className="rounded-full shadow-lg shadow-blue-500 p-3">
+              <div className="rounded-full shadow-lg shadow-[var(--primary-color)] p-3">
                 <RiCodeView size={20} />
               </div>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-blue-500 p-3"
+                className="rounded-full shadow-lg shadow-[var(--secondary-color-dark)] p-3"
               >
                 <AiOutlineClose size={20} />
               </div>
@@ -93,31 +85,25 @@ export const Navbar = () => {
                 <Link href="/#skills">
                   <li className="py-4 text-sm">Skills</li>
                 </Link>
-                {/* <Link href="/#projects">
-                  <li className="py-4 text-sm">Projects</li>
-                </Link> */}
-                {/* <Link href="/contact">
-                  <li className="py-4 text-sm">Contact</li>
-                </Link> */}
               </ul>
-              
+
               <div className="pt-10">
-                <p className="uppercase tracking-widest text-[#5651e5]">
+                <p className="uppercase tracking-widest text-[var(--secondary-color)] font-bold">
                   Let's Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                   <Link href={gitHub} target="_blank">
-                    <div className="rounded-full shadow-lg shadow-blue-500 p-4 ">
+                    <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-4 ">
                       <FaGithub />
                     </div>
                   </Link>
                   <Link href={linkedIn} target="_blank">
-                    <div className="rounded-full shadow-lg shadow-blue-500 p-4 ">
+                    <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-4 ">
                       <FaLinkedin />
                     </div>
                   </Link>
                   <Link href={email} target="_blank">
-                    <div className="rounded-full shadow-lg shadow-blue-500 p-4 ">
+                    <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-4 ">
                       <AiOutlineMail />
                     </div>
                   </Link>

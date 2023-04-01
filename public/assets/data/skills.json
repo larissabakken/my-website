@@ -1,0 +1,78 @@
+[
+  {
+    "type": "front",
+    "stack": [
+      {
+        "language": "Javascript / Typescript",
+        "frameworks": [
+          { "name": "React", "level": "Middle2" },
+          { "name": "Next", "level": "Middle2" },
+          { "name": "Electron", "level": "Junior" },
+          { "name": "React Native", "level": "Junior" },
+          { "name": "Angular", "level": "Junior" },
+          { "name": "jQuery", "level": "Middle" }
+        ]
+      },
+      {
+        "language": "web",
+        "frameworks": [
+          { "name": "Bootstrap", "level": "Junior" },
+          { "name": "Material UI", "level": "Middle2" },
+          { "name": "Sass", "level": "Middle" },
+          { "name": "HTML5", "level": "Senior" },
+          { "name": "CSS3", "level": "Middle2" }
+        ]
+      },
+      {
+        "language": "Ecommerce",
+        "frameworks": [
+          { "name": "Shopify", "level": "Middle" },
+          { "name": "Vtex", "level": "Junior" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "back",
+    "stack": [
+      {
+        "language": "NodeJs",
+        "frameworks": [
+          { "name": "Express", "level": "Middle2" },
+          { "name": "Nest", "level": "Middle2" },
+          { "name": "Fastify", "level": "Middle" },
+          { "name": "Adonis", "level": "Junior" },
+          { "name": "Koa", "level": "Junior" }
+        ]
+      },
+      {
+        "language": "PHP",
+        "frameworks": [
+          { "name": "Laravel", "level": "Middle" },
+          { "name": "Lumen", "level": "Junior" },
+          { "name": "Zend", "level": "Junior" }
+        ]
+      },
+      {
+        "language": "Golang",
+        "frameworks": [
+          { "name": "GIN", "level": "Junior" }
+        ]
+      },
+      {
+        "language": "SQL",
+        "frameworks": [
+          { "name": "MySql", "level": "Middle" },
+          { "name": "SqlServer", "level": "Middle" },
+          { "name": "Postgresql", "level": "Junior" }
+        ]
+      },
+      {
+        "language": "NoSql",
+        "frameworks": [
+          { "name": "MongoDb", "level": "Junior" }
+        ]
+      }
+    ]
+  }
+]

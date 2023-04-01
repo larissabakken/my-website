@@ -1,168 +1,67 @@
-import React from 'react';
-import { BsFillCalendarWeekFill as Calendar} from 'react-icons/bs';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import Tags from './Tags';
+import { BsFillCalendarWeekFill as Calendar } from 'react-icons/bs';
 
 const Timeline = () => {
-  return (
-    <div className="w-full flex justify-center items-center">
-      <div className="max-w-md">
-        <h3 className="mb-6 ml-3 text-2xl font-bold text-neutral-700 dark:text-neutral-300">
-          Latest News
-        </h3>
+  const [content, setContent] = useState<any>([]);
 
-        <ol className="border-l-2 border-info-100">
-          <li>
-            <div className="flex-start md:flex">
-              <div className="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
-                <Calendar size={25}/>
-              </div>
-              <div className="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
-                <div className="mb-4 flex justify-between">
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    New Web Design
-                  </a>
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    04 / 02 / 2022
-                  </a>
+  useEffect(() => {
+    fetch('/assets/data/experience.json')
+      .then((response) => response.json())
+      .then((json) => setContent(json));
+    console.log(content);
+  }, []);
+
+  return (
+    <div className="w-full flex justify-center items-center p-5">
+      <div>
+        <ol className="border-l-2 border-[var(--secondary-color-dark)]">
+          {content.map((item: any, index: number) => (
+            <li key={index}>
+              <div className="flex-start md:flex">
+                <div className="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full">
+                  <Calendar color="var(--primary-color)" size={25} />
                 </div>
-                <p className="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque scelerisque diam non nisi semper, et elementum lorem
-                  ornare. Maecenas placerat facilisis mollis. Duis sagittis
-                  ligula in sodales vehicula.
-                </p>
-                <button
-                  type="button"
-                  className="inline-block rounded bg-info px-4 pt-[6px] pb-[5px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)]"
-                  data-te-ripple-init
-                  data-te-ripple-color="light"
-                >
-                  Preview
-                </button>
-                <button
-                  type="button"
-                  className="inline-block rounded border-2 border-info px-4 pt-[4px] pb-[3px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-                  data-te-ripple-init
-                >
-                  See demo
-                </button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className="flex-start md:flex">
-              <div className="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
-                <div className="mb-4 flex justify-between">
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    21 000 Job Seekers
-                  </a>
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    12 / 01 / 2022
-                  </a>
+                <div className="ml-6 mb-10 block rounded-lg p-6 shadow-md shadow-black/5 bg-[var(--bg-color-light)] sm:max-w-2xl max-w-sm">
+                  <div className="flex justify-between">
+                    <span className="text-xl font-bold text-[var(--primary-color)]">
+                      {item.title}
+                    </span>
+                  </div>
+                  <div className="mb-4">
+                    <Link
+                      href={item.company[0].url}
+                      className="text-lg font-bold italic text-[var(--primary-color-dark)] cursor-pointer hover:scale-110 ease-in duration-300"
+                    >
+                      {item.company[0].name} - {item.company[0].location}
+                    </Link>
+                    <p className="text-sm font-extralight italic">
+                      {item.dateFrom} - {item.dateTo}
+                    </p>
+                  </div>
+                  <p className="mb-6 text-neutral-700 dark:text-neutral-200">
+                    {item.jobDescription}
+                  </p>
+                  <div className="flex flex-wrap">
+                    {item.tags.map((tag: any, index: number) => (
+                      <Tags key={index} tag={tag} />
+                    ))}
+                  </div>
+
+                  <div className="mt-4">
+                    <p>Want a reference about my job here?</p>
+
+                    <Link href={item.company[0].reference}>
+                      <span className="text-sm underline font-bold text-[var(--secondary-color)] cursor-pointer">
+                        You can ask for it here
+                      </span>
+                    </Link>
+                  </div>
                 </div>
-                <p className="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Libero expedita explicabo eius fugiat quia aspernatur autem
-                  laudantium error architecto recusandae natus sapiente sit nam
-                  eaque, consectetur porro molestiae ipsam an deleniti.
-                </p>
-                <button
-                  type="button"
-                  className="inline-block rounded bg-info px-4 pt-[6px] pb-[5px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)]"
-                  data-te-ripple-init
-                  data-te-ripple-color="light"
-                >
-                  Preview
-                </button>
-                <button
-                  type="button"
-                  className="inline-block rounded border-2 border-info px-4 pt-[4px] pb-[3px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-                  data-te-ripple-init
-                >
-                  See demo
-                </button>
               </div>
-            </div>
-          </li>
-          <li>
-            <div className="flex-start md:flex">
-              <div className="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
-                <div className="mb-4 flex justify-between">
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    Awesome Employers
-                  </a>
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    21 / 12 / 2021
-                  </a>
-                </div>
-                <p className="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Voluptatibus temporibus esse illum eum aspernatur, fugiat
-                  suscipit natus! Eum corporis illum nihil officiis tempore.
-                  Excepturi illo natus libero sit doloremque, laborum molestias
-                  rerum pariatur quam ipsam necessitatibus incidunt, explicabo.
-                </p>
-                <button
-                  type="button"
-                  className="inline-block rounded bg-info px-4 pt-[6px] pb-[5px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)]"
-                  data-te-ripple-init
-                  data-te-ripple-color="light"
-                >
-                  Preview
-                </button>
-                <button
-                  type="button"
-                  className="inline-block rounded border-2 border-info px-4 pt-[4px] pb-[3px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-                  data-te-ripple-init
-                >
-                  See demo
-                </button>
-              </div>
-            </div>
-          </li>
+            </li>
+          ))}
         </ol>
       </div>
     </div>

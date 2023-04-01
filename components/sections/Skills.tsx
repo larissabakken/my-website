@@ -29,10 +29,10 @@ import Sass from '../public/assets/skills/frontend/sass.png';
 
 export const Skills = () => {
   return (
-    <div id="skills" className="w-full  p-2">
+    <div id="skills" className="w-full p-2">
       <h1>Teste</h1>
       <div>
-        <Timeline />
+        <h2>Programming Languages</h2>
       </div>
     </div>
   );

@@ -17,43 +17,41 @@ export const Main = () => {
   return (
     <div className="w-full h-screen text-center">
       <div className="max-w-[1024px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div className='pt-10'>
-          <h1 className="py-2 text-white-800">
-            Hi, I'm <span className="text-blue-500">Larissa</span>
+        <div className="pt-10">
+          <h1 className="py-2">
+            Hi, I'm <span className="text-[var(--primary-color)]">Larissa</span>
           </h1>
-          <h1 className="py-2 text-white-800">
-            A <span className="text-blue-500">FullStack</span> Developer
+          <h1 className="py-2">
+            A <span className="text-[var(--primary-color)]"> FullStack </span>{' '}
+            Developer
           </h1>
-          <p className="py-4 text-white-600 max-w-[70%] m-auto">
+          <p className="py-4 text-white-600 m-auto">
             Fullstack || Backend || Frontend || Javascript || Typescript ||
             NodeJs || ExpressJS || NestJs || ReactJS || Nextjs || Golang
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link href={gitHub} target="_blank">
-              <div className="rounded-full shadow-lg shadow-blue-500 p-6 cursor-pointer hover:scale-105 ease-in duration-500">
-                <FaGithub />
+              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+                <FaGithub size={25} />
               </div>
             </Link>
             <Link href={linkedIn} target="_blank">
-              <div className="rounded-full shadow-lg shadow-blue-500 p-6 cursor-pointer hover:scale-105 ease-in duration-500">
-                <FaLinkedin />
+              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+                <FaLinkedin size={25} />
               </div>
             </Link>
             <Link href={email} target="_blank">
-              <div className="rounded-full shadow-lg shadow-blue-500 p-6 cursor-pointer hover:scale-105 ease-in duration-500">
-                <AiOutlineMail />
+              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+                <AiOutlineMail size={25} />
               </div>
             </Link>
           </div>
 
-          <div className='m-5'>
-            <button
-              onClick={handleDownload}
-            >
+          <div className="m-5">
+            <button className="w-[10rem]" onClick={handleDownload}>
               Resume
             </button>
           </div>
-
         </div>
       </div>
     </div>

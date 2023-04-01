@@ -4,7 +4,7 @@ import { Navbar } from '../components/subComponents/Navbar';
 import { Main } from '../components/sections/Main';
 import { Inter } from '@next/font/google';
 import { About } from '../components/sections/About';
-import { Skills } from '../components/sections/Skills';
+import Sections from '../components/sections/Sections';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,7 +20,7 @@ export default function Home() {
       <Navbar />
       <Main />
       <About />
-      <Skills />
+      <Sections />
     </div>
   );
 }

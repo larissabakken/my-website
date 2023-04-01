@@ -1,9 +1,34 @@
 [
   {
-    "title": "teste",
+    "title": "Full Stack Developer",
+    "jobDescription": "As an iTalents employee, I am currently responsible for creating and evolving internal projects using technologies such as NextJS, NestJS, TypeScript, SQL, and Docker. I work within an Agile Scrum methodology using Microsoft tools such as Jira and Teams to manage projects and collaborate with my team. In my current role, I am gaining valuable experience in project management and software development, and contributing to the success of various initiatives.",
+    "dateFrom": "Mar 2023",
+    "dateTo": "Present",
+    "company": [
+      {
+        "name": "Italents",
+        "location": "Remote",
+        "url": "https://italents.com.br/",
+        "reference": "https://www.linkedin.com/in/fdouradolima/"
+      }
+    ],
+    "tags": [
+      "Nextjs",
+      "Nestjs",
+      "Docker",
+      "MySql",
+      "TypeScript",
+      "Swagger",
+      "NodeJS",
+      "Scrum",
+      "Pair Programming"
+    ]
+  },
+  {
+    "title": "Front-end Developer",
     "jobDescription": "I possess extensive expertise in crafting top-notch stores and applications using a variety of cutting-edge technologies, including Vtex (IO, CMS, and Faststore), Shopify, nextjs, and React.js. My primary focus is on ensuring responsiveness and accessibility, with additional proficiency in graphql.",
-    "dateFrom": "2019-01-01",
-    "dateTo": "2019-05-01",
+    "dateFrom": "Apr 2022",
+    "dateTo": "Feb 2023",
     "company": [
       {
         "name": "Codeby",
@@ -17,7 +42,65 @@
       "Shopify",
       "React",
       "Nextjs",
-      "GraphQL"
+      "Liquid",
+      "GraphQL",
+      "Javascript",
+      "SASS",
+      "Pair Programming"
+    ]
+  },
+  {
+    "title": "Full Stack Developer",
+    "jobDescription": "I had the privilege of working on various projects in the environmental sector. In this role, I leveraged my extensive knowledge and expertise to create innovative applications and solutions that addressed critical environmental issues. One of my key responsibilities was to lead the development of project architectures, ensuring that each solution was designed with a full cycle approach. This involved collaborating with cross-functional teams to define project scope, establish technical requirements, and create a detailed roadmap for development and deployment.",
+    "dateFrom": "Aug 2021",
+    "dateTo": "Apr 2022",
+    "company": [
+      {
+        "name": "Arcadis",
+        "location": "Remote",
+        "url": "https://www.arcadis.com/pt-br",
+        "reference": "https://www.linkedin.com/in/luizacintrafernandes/"
+      }
+    ],
+    "tags": [
+      "Expressjs",
+      "Reactjs",
+      "Material UI",
+      "Azure",
+      "SqlServer",
+      "TypeScript",
+      "PHP",
+      "Laravel",
+      "PowerAutomate",
+      "Javascript",
+      "SASS",
+      "StyledComponents"
+    ]
+  },
+  {
+    "title": "Full Stack Developer",
+    "jobDescription": "As an iTalents employee, I am currently responsible for creating and evolving internal projects using technologies such as NextJS, NestJS, TypeScript, SQL, and Docker. I work within an Agile Scrum methodology using Microsoft tools such as Jira and Teams to manage projects and collaborate with my team. In my current role, I am gaining valuable experience in project management and software development, and contributing to the success of various initiatives.",
+    "dateFrom": "Jan 2020",
+    "dateTo": "Dec 2020",
+    "company": [
+      {
+        "name": "Unyleya",
+        "location": "Remote",
+        "url": "https://unyleya.edu.br/",
+        "reference": "https://www.linkedin.com/in/caioedut/"
+      }
+    ],
+    "tags": [
+      "PHP",
+      "Laravel",
+      "Zend",
+      "SqlServer",
+      "Javascript",
+      "AngularJS",
+      "Bootstrap",
+      "Jira",
+      "Scrum",
+      "Pair Programming"
     ]
   }
 ]
