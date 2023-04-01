@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Js from '../public/assets/skills/linguagens/js.png';
-import Ts from '../public/assets/skills/linguagens/ts.png';
-import Kotlin from '../public/assets/skills/linguagens/kotlin.png';
-import PHP from '../public/assets/skills/linguagens/php.webp';
-import Sql from '../public/assets/skills/linguagens/sql.png';
+import Js from '../public/assets/skills/programmingLanguages/js.png';
+import Ts from '../public/assets/skills/programmingLanguages/ts.png';
+import Kotlin from '../public/assets/skills/programmingLanguages/kotlin.png';
+import PHP from '../public/assets/skills/programmingLanguages/php.webp';
+import Sql from '../public/assets/skills/programmingLanguages/sql.png';
 
 import Adonis from '../public/assets/skills/backend/adonis.png';
 import Express from '../public/assets/skills/backend/express.png';

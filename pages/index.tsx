@@ -1,10 +1,10 @@
 import Head from 'next/head';
 
-import { Navbar } from '../components/Navbar';
-import { Main } from '../components/Main';
+import { Navbar } from '../components/subComponents/Navbar';
+import { Main } from '../components/sections/Main';
 import { Inter } from '@next/font/google';
-import { About } from '../components/About';
-import { Skills } from '../components/Skills';
+import { About } from '../components/sections/About';
+import { Skills } from '../components/sections/Skills';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,7 +20,7 @@ export default function Home() {
       <Navbar />
       <Main />
       <About />
-      <Skills />
+  
     </div>
   );
 }

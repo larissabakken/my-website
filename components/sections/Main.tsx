@@ -4,7 +4,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BsPersonLinesFill } from 'react-icons/bs';
 import Link from 'next/link';
-import { ModalCV } from './ModalCV';
+import { ModalCV } from '../subComponents/ModalCV';
 
 export const Main = () => {
   const [show, setShow] = useState(false);
@@ -28,7 +28,7 @@ export const Main = () => {
           </h1>
           <p className="py-4 text-white-600 max-w-[70%] m-auto">
             Fullstack || Backend || Frontend || Javascript || Typescript ||
-            NodeJs || ExpressJS || NestJs || ReactJS || Nextjs || React Native
+            NodeJs || ExpressJS || NestJs || ReactJS || Nextjs || Golang
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link href={gitHub} target="_blank">
@@ -46,13 +46,14 @@ export const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
+          </div>
 
-            <div
-              className="rounded-full shadow-lg shadow-blue-500 p-6 cursor-pointer hover:scale-105 ease-in duration-500"
+          <div className='m-5'>
+            <button
               onClick={() => setShow(true)}
             >
-              <BsPersonLinesFill />
-            </div>
+              Download CV
+            </button>
           </div>
 
           <ModalCV onClose={() => setShow(false)} show={show} />

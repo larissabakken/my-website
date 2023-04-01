@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectItems } from './ProjectItems';
+import { ProjectItems } from '../subComponents/ProjectItems';
 
 export const Projects = () => {
   return (
