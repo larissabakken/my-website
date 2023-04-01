@@ -1,0 +1,23 @@
+[
+  {
+    "title": "teste",
+    "jobDescription": "I possess extensive expertise in crafting top-notch stores and applications using a variety of cutting-edge technologies, including Vtex (IO, CMS, and Faststore), Shopify, nextjs, and React.js. My primary focus is on ensuring responsiveness and accessibility, with additional proficiency in graphql.",
+    "dateFrom": "2019-01-01",
+    "dateTo": "2019-05-01",
+    "company": [
+      {
+        "name": "Codeby",
+        "location": "Remote",
+        "url": "https://codeby.global/",
+        "reference": "https://www.linkedin.com/in/lucasayb/"
+      }
+    ],
+    "tags": [
+      "Vtex",
+      "Shopify",
+      "React",
+      "Nextjs",
+      "GraphQL"
+    ]
+  }
+]
