@@ -9,7 +9,6 @@ import { RiCodeView } from 'react-icons/ri';
 
 export const Navbar = () => {
   const [nav, setNav] = useState(true);
-  const [show, setShow] = useState(false);
 
   const gitHub = 'https://github.com/ramos-larissa';
   const linkedIn = 'https://www.linkedin.com/in/lsramos95/';
@@ -17,6 +16,11 @@ export const Navbar = () => {
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const handleDownload = () => {
+    const pdf = '/resume.pdf';
+    window.open(pdf);
   };
 
   return (
@@ -96,7 +100,8 @@ export const Navbar = () => {
                   <li className="py-4 text-sm">Contact</li>
                 </Link> */}
               </ul>
-              <div className="pt-40">
+              
+              <div className="pt-10">
                 <p className="uppercase tracking-widest text-[#5651e5]">
                   Let's Connect
                 </p>
@@ -116,15 +121,10 @@ export const Navbar = () => {
                       <AiOutlineMail />
                     </div>
                   </Link>
-
-                  <div
-                    className="rounded-full shadow-lg shadow-blue-500 p-4 "
-                    onClick={() => setShow(true)}
-                  >
-                    <BsPersonLinesFill />
-                  </div>
-                  <ModalCV onClose={() => setShow(false)} show={show} />
                 </div>
+              </div>
+              <div className="w-full flex items-center justify-center pt-10 pb-3">
+                <button onClick={handleDownload}>Resume</button>
               </div>
             </div>
           </div>

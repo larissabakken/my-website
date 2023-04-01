@@ -2,24 +2,22 @@ import React, { useState, useEffect } from 'react';
 
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { BsPersonLinesFill } from 'react-icons/bs';
 import Link from 'next/link';
-import { ModalCV } from '../subComponents/ModalCV';
 
 export const Main = () => {
-  const [show, setShow] = useState(false);
-
   const gitHub = 'https://github.com/ramos-larissa';
   const linkedIn = 'https://www.linkedin.com/in/lsramos95/';
   const email = 'mailto:lsramos.cdc@gmail.com';
 
+  const handleDownload = () => {
+    const pdf = '/resume.pdf';
+    window.open(pdf);
+  };
+
   return (
     <div className="w-full h-screen text-center">
       <div className="max-w-[1024px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
-          <p className="py-2 uppercase text-sm tracking-widest text-white-300">
-            Coding on Javascript and dreaming on Javascript.
-          </p>
+        <div className='pt-10'>
           <h1 className="py-2 text-white-800">
             Hi, I'm <span className="text-blue-500">Larissa</span>
           </h1>
@@ -50,13 +48,12 @@ export const Main = () => {
 
           <div className='m-5'>
             <button
-              onClick={() => setShow(true)}
+              onClick={handleDownload}
             >
-              Download CV
+              Resume
             </button>
           </div>
 
-          <ModalCV onClose={() => setShow(false)} show={show} />
         </div>
       </div>
     </div>
