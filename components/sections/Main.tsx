@@ -31,24 +31,24 @@ export const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link href={gitHub} target="_blank">
-              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-110 ease-in duration-150">
                 <FaGithub size={25} />
               </div>
             </Link>
             <Link href={linkedIn} target="_blank">
-              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-110 ease-in duration-150">
                 <FaLinkedin size={25} />
               </div>
             </Link>
             <Link href={email} target="_blank">
-              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-105 ease-in duration-500">
+              <div className="rounded-full shadow-lg shadow-[var(--secondary-color)] p-6 cursor-pointer hover:scale-110 ease-in duration-150">
                 <AiOutlineMail size={25} />
               </div>
             </Link>
           </div>
 
           <div className="m-5">
-            <button className="w-[10rem]" onClick={handleDownload}>
+            <button className="w-[12rem]" onClick={handleDownload}>
               Resume
             </button>
           </div>
