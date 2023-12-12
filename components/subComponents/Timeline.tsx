@@ -40,7 +40,7 @@ const Timeline = () => {
                       {item.dateFrom} - {item.dateTo}
                     </p>
                   </div>
-                  <p className="mb-6 text-neutral-700 dark:text-neutral-200">
+                  <p className="mb-6 text-gray-50">
                     {item.jobDescription}
                   </p>
                   <div className="flex flex-wrap">
@@ -50,12 +50,16 @@ const Timeline = () => {
                   </div>
 
                   <div className="mt-4">
-                    <p>Want a reference about my job here?</p>
 
                     <Link href={item.company[0].reference}>
-                      <span className="text-sm underline font-bold text-[var(--secondary-color)] cursor-pointer">
-                        You can ask for it here
-                      </span>
+                      <p className="text-sm underline font-bold text-[var(--secondary-color)] cursor-pointer">
+                        Reference
+                      </p>
+                    </Link>
+                    <Link href={item.company[0].letter}>
+                      <p className="text-sm underline font-bold text-[var(--primary-color)] cursor-pointer">
+                        Reference letter
+                      </p>
                     </Link>
                   </div>
                 </div>

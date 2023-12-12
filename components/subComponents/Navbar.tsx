@@ -8,9 +8,9 @@ import { RiCodeView } from 'react-icons/ri';
 export const Navbar = () => {
   const [nav, setNav] = useState(true);
 
-  const gitHub = 'https://github.com/ramos-larissa';
+  const gitHub = 'https://github.com/larissabakken';
   const linkedIn = 'https://www.linkedin.com/in/lsramos95/';
-  const email = 'mailto:lsramos.cdc@gmail.com';
+  const email = 'mailto:larissabakken@gmail.com';
 
   const handleNav = () => {
     setNav(!nav);

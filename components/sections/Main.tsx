@@ -5,9 +5,9 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
 
 export const Main = () => {
-  const gitHub = 'https://github.com/ramos-larissa';
+  const gitHub = 'https://github.com/larissabakken';
   const linkedIn = 'https://www.linkedin.com/in/lsramos95/';
-  const email = 'mailto:lsramos.cdc@gmail.com';
+  const email = 'mailto:larissabakken@gmail.com';
 
   const handleDownload = () => {
     const pdf = '/resume.pdf';

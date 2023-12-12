@@ -20,8 +20,8 @@ export const About = () => {
             sass. Technology is my passion, and my ultimate goal is to become a
             software architect. <br /> Currently, I am learning GoLang to expand
             my knowledge and skillset. In addition to my technical abilities, I
-            have a B2 level of English proficiency and I am currently studying
-            Norwegian (A1). <br />I have excellent hard skills, including
+            have a C1 level of English proficiency and I am currently studying
+            Norwegian A1. <br />I have excellent hard skills, including
             proficiency in JavaScript, TypeScript, Node.js, PHP, HTML, CSS,
             SASS, SQL, NoSQL, and Git. I also have experience working with
             Shopify and Vtex. <br />
@@ -48,7 +48,7 @@ export const About = () => {
             <span className="font-bold">
               Uniceub - Software analysis and development
             </span>{' '}
-            || <span className="font-thin">2020 - 2023</span>
+            || <span className="font-thin">2020 - Uncompleted</span>
           </p>
           </div>
           <div className="col-span-1">
